@@ -1,0 +1,35 @@
+<html>
+<title>需求文档选择</title>
+<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+ /*设置点击前的样式*/
+ input[type="checkbox"] + label::before { 
+ content: "\a0";  /*不换行空格*/
+ display: inline-block;
+ width: 20px;
+ height: 20px;
+ border-radius: 50% 50%;
+ background: #ffffff;
+ border: 1px solid #D8D8D8;
+ text-indent: 6px;
+}
+input[type="checkbox"]:checked + label::before {
+ content: "\2713";
+ background-color: #FF8200;
+ color: #ffffff;
+}
+input {
+ position: relative;
+}
+
+</style>
+<body style="text-align: center;vertical-align: middle;margin-top: 20%;font-size:xx-large;background-color:darkred;">
+    <form action="/documents">
+        <p><input type="checkbox" name="first" value="1">  实用软件——邮件群发软件及相关文档</p>
+        <p><input type="checkbox" name="second" value="2">  统计文档——机器人公司全国分布情况汇总表</p><br>
+        <input type="submit" value="Chose the Document You need" style="font-size: xx-large;">
+    </form>
+</body>
+    
+</html>

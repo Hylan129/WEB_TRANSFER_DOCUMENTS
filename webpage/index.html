@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>文档软件自助提取 By SXQL&NLP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script type="text/javascript">
+		function verify(){
+			var content = document.getElementsByName('email')[0].value;
+			var emreg=/^\w{3,}(\.\w+)*@[A-z0-9]+(\.[A-z0-9]{2,5}){1,2}$/;
+			if(emreg.test(content)){
+				return true;}
+			else{
+				alert("输入邮箱地址格式不合法，请重新输入，谢谢！");
+				return false;};}
+	</script>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header" class="alt">
+		<div class="logo"><a href="index.html">
+				<font size=5px>文档软件自助提取</font>
+			</a></div>
+		<a href="#menu">Menu</a><a href="/download/what_he_said.crx">Chrome插件</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="introduction.html">Introduction</a></li>
+		</ul>
+	</nav>
+
+	<!-- Banner -->
+	<section class="banner full">
+		<article>
+			<img src="images/slide01.jpg" alt="" />
+			<div class="inner">
+				<header>
+					<p>Web template by <a href="https://templated.co">TEMPLATED</a></p>
+					<br>
+					<form action="/robots" method="GET" onsubmit="return verify()">
+						<input type="text" name="email" style="height:150px;width:400px" max=100
+							placeholder="请输入邮箱地址，文档资料3分钟内自动发送到您邮箱！">
+						<br>
+						<input type="submit" value="Submit Your Input">
+					</form>
+					<form action="/try">
+						<input type="submit" value="Click Here To Try Something New">
+					</form>
+
+				</header>
+				<div>
+					<style>
+						.node {
+							cursor: pointer;
+							stroke: #3182bd;
+							stroke-width: 1.5px;
+						}
+
+						.link {
+							fill: none;
+							stroke: #9ecae1;
+							stroke-width: 1.5px;
+						}
+					</style>
+				</div>
+
+
+			</div>
+		</article>
+	</section>
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li><a href="https://github.com/hylan129" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="https://work.weixin.qq.com/wework_admin/user/h5/qqmail_user_card/vc4b761fcc10c1b0be" class="icon fa-wechat"><span class="label">Wechat</span></a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			&copy; SXQL&NLP. All rights reserved.
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
